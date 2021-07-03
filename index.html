@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <section class="move">
+            <div class="container p-3">
+                <h1 class="move__headding text-center mb-3">Movies catalog</h1>
+                <div class="avangard d-flex gx-3 ">
+                    <form class="w-100" method="POST" action="#">
+                        <input
+                            class="form-control mb-3"
+                            type="text"
+                            name="user_name"
+                            placeholder="ave"
+                            id="user_name"
+                            required
+                        />
+
+                        <input
+                            class="form-control mb-3"
+                            type="text"
+                            name="user_name"
+                            placeholder="5"
+                            id="user_name"
+                            required
+                        />
+
+                        <select
+                            class="form-select mb-3"
+                            aria-label=".form-select-lg example"
+                        >
+                            <option selected>All</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+
+                        <select
+                            class="form-select mb-3"
+                            aria-label=".form-select-sm example"
+                        >
+                            <option selected>Reating (hige to low)</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+
+                        <button
+                            class="btn btn-primary w-100 mb-4"
+                            type="submit"
+                        >
+                            Search
+                        </button>
+
+                        <h3 class="">Bookmarked movies</h3>
+                        <ul class="p-0">
+                            <li class="border list-inline p-3">
+                                <h5>Avangars: Infiity War</h5>
+                                <span class="badge bg-danger p-2">Remove</span>
+                            </li>
+                            <li class="border list-inline p-3">
+                                <h5>The Avangars</h5>
+                                <span class="badge bg-danger p-2">Remove</span>
+                            </li>
+                            <li class="border list-inline p-3">
+                                <h5>12 Years a Slove</h5>
+                                <span class="badge bg-danger p-2">Remove</span>
+                            </li>
+                        </ul>
+                    </form>
+ 
+                    <div class="left-box w-sm-75 ms-0 ms-md-5">
+                        <h4 class="left-box__headding">Search result: 39</h4>
+                        <div class="alert alert-primary" role="alert">
+                            Use the form on the left to search for a move
+                        </div>
+
+                        <ul class="left-box__list row  mb-5 p-0">
+                            <li class="left-box__item  col  list-inline mb-3">
+                                <div class=" border  p-0 ">
+                                    <img
+                                        class="left-box__img  rounded-top "
+                                        src="./images/avangart-original.jpg"
+                                        alt="pic of avengers move"
+                                        width="450"
+                                        height="250"
+                                       
+                                    />
+                                    <div class="left-box-inner w-100 p-3">
+                                        <h5 class="left-box-inner__headding">
+                                            Avengers: Infinty War
+                                        </h5>
+                                        <div class="d-flex mb-3">
+                                            <img
+                                                class="me-2"
+                                                src="./images/calendar.png"
+                                                alt="pictue of calendar"
+                                                width="24"
+                                                height="24"
+                                            />
+                                            <p class="m-0">2018</p>
+                                        </div>
+
+                                        <div class="d-flex mb-3">
+                                            <img
+                                                class="me-2"
+                                                src="./images/star.png"
+                                                alt="pictue of star"
+                                                width="24"
+                                                height="24"
+                                            />
+                                            <p class="m-0">8.7</p>
+                                        </div>
+
+                                        <div class="">
+                                            <button
+                                                class="
+                                                    btn btn btn-outline-primary
+                                                "
+                                                type="button"
+                                            >
+                                                Watch Trailer
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                class="btn btn-outline-primary"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"
+                                            >
+                                                More Info
+                                            </button>
+
+                                            <button
+                                                class="
+                                                    btn btn btn-outline-primary
+                                                "
+                                                type="button"
+                                            >
+                                                Bookmarks
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="left-box__item  list-inline col   ">
+                                <div class=" border p-0">
+                                    <img
+                                        class="left-box__img  rounded-top "
+                                        src="./images/2012.jpg"
+                                        alt="pic of avengers move"
+                                        width="450"
+                                        height="250"
+                                    />
+                                    <div class="left-box-inner w-100 p-3">
+                                        <h5 class="left-box-inner__headding">
+                                             The Avengers
+                                        </h5>
+                                        <div class="d-flex mb-3">
+                                            <img
+                                                class="me-2"
+                                                src="./images/calendar.png"
+                                                alt="pictue of calendar"
+                                                width="24"
+                                                height="24"
+                                            />
+                                            <p class="m-0">2012</p>
+                                        </div>
+
+                                        <div class="d-flex mb-3">
+                                            <img
+                                                class="me-2"
+                                                src="./images/star.png"
+                                                alt="pictue of star"
+                                                width="24"
+                                                height="24"
+                                            />
+                                            <p class="m-0">8.1</p>
+                                        </div>
+
+                                        <div class="">
+                                            <button
+                                                class="
+                                                    btn btn btn-outline-primary
+                                                "
+                                                type="button"
+                                            >
+                                                Watch Trailer
+                                            </button>
+
+                                            <button
+                                                type="button"
+                                                class="btn btn-outline-primary"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"
+                                            >
+                                                More Info
+                                            </button>
+
+                                            <button
+                                                class="
+                                                    btn btn btn-outline-primary
+                                                "
+                                                type="button"
+                                            >
+                                                Bookmarks
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="list-inline d-flex justify-content-center">
+                            <li>
+                                <button class="btn btn-primary" type="button">01</button>
+                                <button class="btn btn-outline-primary" type="button">02</button>
+                                <button class="btn btn-outline-primary" type="button">03</button>
+                                <button class="btn btn-outline-primary" type="button">04</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Modal title
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">...</div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Save changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
